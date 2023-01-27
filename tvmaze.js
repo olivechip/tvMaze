@@ -15,7 +15,7 @@ const $episodeButton = $(".getEpisodes");
  */
 
 async function getShowsByTerm(term) {
-  const res = await axios.get(`http://api.tvmaze.com/search/shows?q=${term}`);
+  const res = await axios.get(`https://api.tvmaze.com/search/shows?q=${term}`);
   const data = res.data;
   // console.log(data); sanity check
 
